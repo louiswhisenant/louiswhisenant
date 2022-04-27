@@ -1,0 +1,62 @@
+/* ------------------ Variables ------------------ */
+
+:root {
+    --danger: rgb(88, 12, 12);
+    --danger-light: rgb(88, 12, 12);
+    --success-light: rgb(24, 54, 17);
+}
+
+/* ------------------ Utility Selectors ------------------ */
+
+.bg-danger {
+    background: var(--danger-light);
+}
+
+.bg-success {
+    background: var(--success-light);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.lh-2em {
+    line-height: 2em;
+}
+
+/* ------------------ Alert Selectors ------------------ */
+.alert-container {
+    z-index: 10;
+}
+
+.alert-box {
+    text-align: left;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.alert-msg {
+    padding: 0;
+    margin: 0 2em 0 0;
+    color: #aaa;
+    opacity: .7;
+    line-height: 1.75em;
+}
+
+.alert-box .alert-close {
+    margin-left: auto; 
+    height: 100%;
+    text-decoration: none;
+    color: #999;
+    font-size: 1.5em;
+    text-align: center;
+}
